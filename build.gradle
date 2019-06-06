@@ -4,6 +4,9 @@ plugins {
 }
 
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'application'
+
+applicationDefaultJvmArgs=["-Xms512m", "-Xmx1024m"]
 
 group = 'jvm.monitoring'
 version = '0.0.1-SNAPSHOT'
